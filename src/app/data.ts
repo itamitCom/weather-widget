@@ -6,8 +6,8 @@ export const resorts: IResort[] = [
     {
         id: 1,
         img: 'assets/images/hotel1.jpeg',
-        address: 'BQ Aguamarina Boutique;Sant Antoni de la Platja,;41, Can Pastilla, Spain',
-        phone:  '9025706477',
+        address: 'Ekb hotel 1',
+        phone:  '+7123456789',
         weather: {
             title: 'Sunny bolearic islands',
             icon: 'sunny',
@@ -25,8 +25,8 @@ export const resorts: IResort[] = [
     {
         id: 2,
         img: 'assets/images/hotel2.jpeg',
-        address: 'Railay Village Resort;544 Moo 2, Ao Nang Muang,;81000 Railay Beach, Thailand',
-        phone:  '3033861123',
+        address: 'Ekb hotel 2',
+        phone:  '+7123456789',
         weather: {
             title: 'Do not forget the sunscreen',
             icon: 'sunny',
@@ -44,8 +44,8 @@ export const resorts: IResort[] = [
     {
         id: 3,
         img: 'assets/images/hotel3.jpeg',
-        address: 'о. Рыбное',
-        phone:  '1234567894',
+        address: 'Ekb hotel 3',
+        phone:  '+71234567894',
         weather: {
             title: 'Don\'t forget raincoat',
             icon: 'rainy',
@@ -63,8 +63,8 @@ export const resorts: IResort[] = [
     {
         id: 4,
         img: 'assets/images/tour1.jpeg',
-        address: 'TUI;г.Киев,;ул. Трехсвятительская, 5/1',
-        phone:  '0986071482',
+        address: 'Ekb tour 1',
+        phone:  '+7123456789',
         weather: {
             title: 'Go to bed',
             icon: 'night',
@@ -82,7 +82,7 @@ export const resorts: IResort[] = [
     {
         id: 5,
         img: 'assets/images/tour2.jpeg',
-        address: 'Join UP!;01033, г.Киев,;ул. Жилянская, 55',
+        address: 'Ekb tour 2',
         phone:  '0986071482',
         weather: {
             title: 'Time to sleep',
@@ -101,7 +101,7 @@ export const resorts: IResort[] = [
     {
         id: 6,
         img: 'assets/images/tour3.jpeg',
-        address: 'Join UP!;01033, г.Киев,;ул. Жилянская, 55',
+        address: 'Ekb tour 3',
         phone:  '0986071482',
         weather: {
             title: 'Time to sleep',
@@ -120,7 +120,7 @@ export const resorts: IResort[] = [
     {
         id: 7,
         img: 'assets/images/fish1.jpeg',
-        address: 'Join UP!;01033, г.Киев,;ул. Жилянская, 55',
+        address: 'Ekb fish 1',
         phone:  '0986071482',
         weather: {
             title: 'Time to sleep',
@@ -139,7 +139,7 @@ export const resorts: IResort[] = [
     {
         id: 8,
         img: 'assets/images/fish2.jpeg',
-        address: 'Join UP!;01033, г.Киев,;ул. Жилянская, 55',
+        address: 'Ekb fish 2',
         phone:  '0986071482',
         weather: {
             title: 'Time to sleep',
@@ -158,7 +158,7 @@ export const resorts: IResort[] = [
     {
         id: 9,
         img: 'assets/images/fish3.jpeg',
-        address: 'Join UP!;01033, г.Киев,;ул. Жилянская, 55',
+        address: 'Ekb fish 3',
         phone:  '0986071482',
         weather: {
             title: 'Time to sleep',
