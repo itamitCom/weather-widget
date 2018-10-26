@@ -1,0 +1,28 @@
+<div class="element-bg-img"><img src="assets/images/1.jpg" alt="" class="img-responsive"> </div>
+<div class="element-left-bottom">
+  <div class="ele-strip">
+    <ul>
+      <li><a href="#" (click)="change($event)">Hotel</a></li>
+      <li><a href="#" (click)="change($event)">Fishing</a></li>
+      <li><a href="#" (click)="change($event)">Tours</a></li>
+      <li><a href="#" (click)="change($event)">Weather</a></li>
+      <li><a href="#" (click)="change($event)">All</a></li>
+    </ul>
+  </div>
+  <div class="village">
+    <h3>Righteous indignation & like</h3>
+    <span class="line"> </span>
+    <div class="activity_box">
+      <div class="scrollbar" id="style-2" *ngIf="resorts$ | async as resorts; else loadingTemplate">
+        <app-resort
+                *ngFor="let resort of resorts | resortsFilter:type"
+                [resort]="resort"
+        >
+        </app-resort>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #loadingTemplate>
+  ... loading
+</ng-template>

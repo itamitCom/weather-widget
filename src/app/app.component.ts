@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'weather-widget';
+    public title = 'weather-widget';
+
+    public type = '';
+
+    public changeType(value: string): void {
+        console.log(value);
+        this.type = value;
+    }
 }
