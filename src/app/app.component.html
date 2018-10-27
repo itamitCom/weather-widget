@@ -1,11 +1,11 @@
 <h1>Hot Weather Widget</h1>
 <div class="element">
   <div class="element-left">
-    <app-element-left (changeByType)="changeType($event)"></app-element-left>
+    <app-element-left (changeByType)="changeType($event)" (selectByResort)="selectResort($event)"></app-element-left>
   </div>
   <div class="element-right">
-    <app-temperatur></app-temperatur>
-    <app-teddy-bear></app-teddy-bear>
+    <app-temperatur [weather]="resort.weather"></app-temperatur>
+    <app-teddy-bear [socialInfo]="resort.social_info"></app-teddy-bear>
   </div>
   <div class="clear"> </div>
 </div>

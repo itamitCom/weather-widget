@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {IWeather} from '../../Entity/WeatherInterface';
 
 @Component({
   selector: 'app-temperatur',
   templateUrl: './temperatur.component.html',
   styleUrls: ['./temperatur.component.css']
 })
-export class TemperaturComponent implements OnInit {
+export class TemperaturComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Input()
+  public weather!: IWeather;
 }

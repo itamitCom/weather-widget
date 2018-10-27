@@ -17,6 +17,7 @@
         <app-resort
                 *ngFor="let resort of resorts | resortsFilter:type"
                 [resort]="resort"
+                (click)="select(resort)"
         >
         </app-resort>
       </div>

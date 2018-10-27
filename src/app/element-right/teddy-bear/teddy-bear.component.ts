@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {ISocial} from '../../Entity/SocialInterface';
 
 @Component({
   selector: 'app-teddy-bear',
   templateUrl: './teddy-bear.component.html',
   styleUrls: ['./teddy-bear.component.css']
 })
-export class TeddyBearComponent implements OnInit {
+export class TeddyBearComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Input()
+  public socialInfo!: ISocial;
 }

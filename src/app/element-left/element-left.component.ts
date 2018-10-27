@@ -13,6 +13,9 @@ export class ElementLeftComponent implements OnInit {
     @Output()
     public changeByType: EventEmitter<string> = new EventEmitter();
 
+    @Output()
+    public selectByResort: EventEmitter<IResort> = new EventEmitter();
+
     public resorts$: Observable<IResort[]> = resorts$;
 
     public type = '';
@@ -23,6 +26,10 @@ export class ElementLeftComponent implements OnInit {
         const li: HTMLLIElement = event.target as HTMLLIElement;
         this.type = li.innerHTML;
         this.changeByType.emit(li.innerHTML);
+    }
+
+    public select(resort: IResort) {
+        this.selectByResort.emit(resort);
     }
 
     ngOnInit() {

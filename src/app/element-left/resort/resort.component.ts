@@ -1,4 +1,4 @@
-import {Component, Input, Output} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {IResort} from '../../Entity/ResortInterface';
 
 @Component({
@@ -10,12 +10,4 @@ export class ResortComponent {
 
     @Input()
     public resort!: IResort;
-
-    @Output()
-    public selectByResort!: number;
-
-    public select(id: number) {
-        console.log('id - ', id)
-        this.selectByResort = id;
-    }
 }
