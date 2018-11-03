@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {IResort} from '../../Entity/ResortInterface';
+import {IResort} from '../../common/entity/ResortInterface';
 
 @Component({
   selector: 'app-resort',

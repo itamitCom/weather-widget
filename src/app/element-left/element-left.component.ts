@@ -1,7 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Observable} from 'rxjs';
-import {IResort} from '../Entity/ResortInterface';
-import {resorts$} from '../data';
+import {Component, OnInit} from '@angular/core';
+import {IResort} from '../common/entity/ResortInterface';
+import {ResortService} from '../common/services/resort.service';
 
 @Component({
   selector: 'app-element-left',
@@ -10,28 +9,29 @@ import {resorts$} from '../data';
 })
 export class ElementLeftComponent implements OnInit {
 
-    @Output()
-    public changeByType: EventEmitter<string> = new EventEmitter();
-
-    @Output()
-    public selectByResort: EventEmitter<IResort> = new EventEmitter();
-
-    public resorts$: Observable<IResort[]> = resorts$;
+    public resorts!: IResort[];
 
     public type = '';
 
-    constructor() { }
-
-    public change(event: Event) {
-        const li: HTMLLIElement = event.target as HTMLLIElement;
-        this.type = li.innerHTML;
-        this.changeByType.emit(li.innerHTML);
-    }
-
-    public select(resort: IResort) {
-        this.selectByResort.emit(resort);
-    }
+    constructor(
+        private _resortService: ResortService
+    ) {}
 
     ngOnInit() {
+        this._resortService.resorts.subscribe((resorts: IResort[]) => {
+            this.resorts = resorts;
+            this.type = resorts[0].type;
+        });
+    }
+
+    public selectResort(resort: IResort): void {
+        console.log(resort);
+        this._resortService.setResort = resort;
+    }
+
+
+    public filterResort(type: string): void {
+        console.log(type);
+        this.type = type;
     }
 }

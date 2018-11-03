@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import {IResort} from './Entity/ResortInterface';
+import {IResort} from '../common/entity/ResortInterface';
 
 @Pipe({
   name: 'resortsFilter'

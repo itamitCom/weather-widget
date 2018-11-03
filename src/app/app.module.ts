@@ -6,7 +6,12 @@ import { ElementLeftComponent } from './element-left/element-left.component';
 import { TemperaturComponent } from './element-right/temperatur/temperatur.component';
 import { TeddyBearComponent } from './element-right/teddy-bear/teddy-bear.component';
 import { ResortComponent } from './element-left/resort/resort.component';
-import { ResortsFilterPipe } from './resorts-filter.pipe';
+import { ResortsFilterPipe } from './element-left/resorts-filter.pipe';
+import { ElementRightComponent } from './element-right/element-right.component';
+import { FirstInitDirective } from './element-left/first-init.directive';
+import { ResortService } from './common/services/resort.service';
+import { MenuFilterPipe } from './element-left/menu-filter.pipe';
+import { PhonePipe } from './element-left/resort/phone.pipe';
 
 @NgModule({
   declarations: [
@@ -15,12 +20,18 @@ import { ResortsFilterPipe } from './resorts-filter.pipe';
     TemperaturComponent,
     TeddyBearComponent,
     ResortComponent,
-    ResortsFilterPipe
+    ResortsFilterPipe,
+    ElementRightComponent,
+    FirstInitDirective,
+    MenuFilterPipe,
+    PhonePipe
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+      ResortService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

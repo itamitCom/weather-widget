@@ -5,7 +5,7 @@ export interface IResort {
     id: number,
     img: string;
     address: string;
-    phone: string;
+    phone: number;
     weather: IWeather;
     social_info: ISocial;
     type: string;

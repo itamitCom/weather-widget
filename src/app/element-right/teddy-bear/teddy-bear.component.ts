@@ -1,13 +1,10 @@
-import {Component, Input} from '@angular/core';
-import {ISocial} from '../../Entity/SocialInterface';
+import {Component} from '@angular/core';
+import {ResortSubscriberComponent} from '../../common/components/resort-subscriber/resort-subscriber.component';
 
 @Component({
   selector: 'app-teddy-bear',
   templateUrl: './teddy-bear.component.html',
   styleUrls: ['./teddy-bear.component.css']
 })
-export class TeddyBearComponent {
-
-  @Input()
-  public socialInfo!: ISocial;
+export class TeddyBearComponent extends ResortSubscriberComponent {
 }
